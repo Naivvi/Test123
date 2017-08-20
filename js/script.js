@@ -17,10 +17,7 @@ const RADIUS = 200;
 
 document.addEventListener('mousemove', function (event) {
   var x = event.clientX;
- var y = event.clientY;
-  
-  var circle = `circle(${RADIUS}px at ${x}px ${y}px)`;
-  container.style['-webkit-clip-path'] = circle;
+
 
 });
 
