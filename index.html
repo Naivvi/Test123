@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<section class="one parallax">
+		<h1 class="one__header parallax">The Descent </h1>
+		<a href="#two" class="one__link parallax"> Enter the Cave</a>
+	</section>
+
+	<section id="two" class="two">
+	<!-- bla bla bla bla -->
+		<div class="two__left">
+			<h1 class="two__header">Lorem ipsum.</h1>
+			<p class="two__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+			<p class="two__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+			<p class="two__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+		</div>
+		<div class="two__right">
+			<div class="two__port">
+				<div class="two__img parallax">
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="three">
+		<h1 class="three__header">Woah! Who turned off the Lights?</h1>
+		<div class="three__circle "></div>
+	</section>
+	
+	<section class="four parallax">
+
+		<div class="four__content parallax"></div>
+		<div class="four__info">
+
+			<h1 class="four__header">Lorem ipsum.</h1>
+			<p class="four__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+			<p class="four__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+		</div>
+	
+	</section>
+
+	<section class="five ">
+	</section>
+	
+	<section class="six parallax">
+
+		<div class="six__info">
+
+			<h1 class="six__header">Lorem ipsum.</h1>
+			<p class="six__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+			<p class="six__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eius est nulla debitis, autem eaque corporis ipsum temporibus totam commodi facere, ex incidunt molestias accusamus aspernatur dolorem? Molestias, dolores? Repudiandae. </p>
+
+		</div>
+
+		<div class="six__content six__content--img0 parallax"></div>
+	
+	</section>
+
+
+		<section class="seven">
+
+		<h1 class="seven__header"> Contact </h1>
+					<form id="contact" class="contact">
+
+
+  						<label for="name" class="contact__label">
+   							 <input class="contact__input" id="name" name="name" type="text" placeholder="Name">
+    							<span class="contact__span">Name</span>
+ 						</label>
+
+  						<label  for="email" class="contact__label">
+   							 <input class="contact__input" id="email" name="email" type="email" placeholder="Email">
+    							<span class="contact__span">Email</span>
+ 						</label>
+  						
+
+  					  	<label  for="subject" class="contact__label">
+   							 <input class="contact__input" id="subject" name="subject" type="subject" placeholder="Subject">
+    							<span class="contact__span">Subject</span>
+ 						</label>
+
+  					  	<label  for="message" class="contact__label">
+
+   							 <textarea   class="contact__message" id="message" name="message" type="message" placeholder="Message"></textarea>
+
+    							<span class="contact__span">Message</span>
+ 						</label>
+  
+  			
+	
+
+ 						  <input class="contact__submit" type="submit" value="Send">
+		 			</form>
+
+
+
+
+	</section>	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<script type="text/javascript">
+			$(function(){
+		$('.one__link').on('click',function(e){
+			e.preventDefault();
+			var target = $(this).attr('href');
+
+			var offsetTop = $(target).offset().top;
+		
+
+			$('html,body').animate({scrollTop:offsetTop}, 1500);
+		});
+	});
+	</script>
+</body>
+</html>
