@@ -21,7 +21,7 @@ document.addEventListener('mousemove', function (event) {
   
   var circle = `circle(${RADIUS}px at ${x}px ${y}px)`;
   container.style['-webkit-clip-path'] = circle;
-  container.style['clip-path'] = circle;
+
 });
 
 $(function(){
